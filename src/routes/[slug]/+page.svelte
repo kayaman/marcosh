@@ -7,7 +7,7 @@
 <svelte:head>
   <title>{data.meta.title}</title>
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="{data.meta.title}" />
+  <meta property="og:title" content={data.meta.title} />
 </svelte:head>
 
 <article>
@@ -16,9 +16,9 @@
     <p>Published at {formatDate(data.meta.date)}</p>
   </hggroup>
 
-  <div class='tags'>
+  <div class="tags">
     {#each data.meta.categories as tag}
-      <span class='surface-4'>&num;{tag}</span>
+      <span class="surface-4">&num;{tag}</span>
     {/each}
   </div>
 
@@ -48,8 +48,8 @@
     margin-top: var(--size-7);
   }
 
-	.tags > * {
-		padding: var(--size-2) var(--size-3);
-		border-radius: var(--radius-round);
-	}
+  .tags > * {
+    padding: var(--size-2) var(--size-3);
+    border-radius: var(--radius-round);
+  }
 </style>
