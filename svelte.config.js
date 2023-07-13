@@ -4,17 +4,17 @@ import { mdsvex } from 'mdsvex'
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexConfig = {
-	extensions: ['.md'],
+  extensions: ['.md'],
 }
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	extensions: ['.svelte', '.md'],
-	preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
+  extensions: ['.svelte', '.md'],
+  preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 
-	kit: {
-		adapter: adapter(),
-	},
+  kit: {
+    adapter: adapter(),
+  },
 }
 
 export default config

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import * as config from "$lib/config";
+  import * as config from '$lib/config'
 </script>
 
 <nav>
@@ -49,5 +49,4 @@
       margin-block: 0;
     }
   }
-
 </style>

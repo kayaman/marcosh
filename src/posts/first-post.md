@@ -14,7 +14,7 @@ Hey friends 👋🏻
 
 ```ts
 const foo = async () => {
-	console.log('foo')
-	return true
+  console.log('foo')
+  return true
 }
 ```
