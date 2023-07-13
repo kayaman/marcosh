@@ -12,6 +12,8 @@ published: true
   import Counter from '$lib/components/counter.svelte';
 </script>
 
+## Table of Contents
+
 ## Svelte
 
 Media inside the **static** folder is served from `/`.
