@@ -46,7 +46,7 @@ pnpm create t3-app@latest
 ? Which packages would you like to enable? <u><b>nextAuth</b></u>, <u><b>prisma</b></u>, <u><b>tailwind</b></u>, <u><b>trpc</b></u>
 ? Initialize a new git repository? <u><b>Yes</b></u>
 ? Would you like us to run 'pnpm install'? <u><b>Yes</b></u>
-? What import alias would you like configured? <b><u>@/</b></u>
+? What import alias would you like configured? <u><b>@/</b></u>
 Using: <u><b>pnpm</b></u>
 ✔ <b>things-t3-demo</b> scaffolded successfully!
 </pre>

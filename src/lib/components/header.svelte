@@ -4,10 +4,14 @@
 </script>
 
 <nav>
-  <a href="/" class="title">
-    <b>{config.title}</b>
-  </a>
-
+  <div>
+    <a href="/" class="title">
+      <b>{config.title}</b>
+    </a>
+    <h4>
+      <b>{config.description}</b>
+    </h4>
+  </div>
   <ul class="links">
     <li>
       <a href="/about">About</a>
@@ -28,6 +32,12 @@
     padding-block: var(--size-7);
   }
 
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2);
+  }
+
   .links {
     margin-block: var(--size-7);
   }
@@ -35,6 +45,10 @@
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  h4 {
+    position: relative;
   }
 
   @media (min-width: 768px) {
