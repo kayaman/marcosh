@@ -16,7 +16,7 @@
       <a href="/contact">Contact</a>
     </li>
     <li>
-      <a href="/rss" target="_blank">RSS</a>
+      <a href="/feed.xml" target="_blank">RSS</a>
     </li>
   </ul>
 
