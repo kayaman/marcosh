@@ -29,12 +29,13 @@
 
 <style>
   article {
-    max-inline-size: var(--size-content-3);
+    max-inline-size: var(--size-content-lg);
     margin-inline: auto;
   }
 
   h1 {
     text-transform: capitalize;
+    max-inline-size: inherit;
   }
 
   h1 + p {
@@ -49,7 +50,7 @@
   }
 
   .tags > * {
-    padding: var(--size-2) var(--size-3);
-    border-radius: var(--radius-round);
+    padding: var(--size-2);
+    border-radius: var(--radius-3);
   }
 </style>
