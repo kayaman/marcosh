@@ -8,6 +8,7 @@ export type Category =
   | 'other'
   | 'all'
   | 'none'
+  | 't3stack'
 
 export type Post = {
   title: string
