@@ -1,6 +1,6 @@
 ---
-title: Welcome
-description: What's this and what's next?
+title: First post
+description: First post
 date: '2023-07-15'
 categories:
   - sveltekit
