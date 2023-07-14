@@ -6,10 +6,10 @@
 <nav>
   <div>
     <a href="/" class="title">
-      <b>{config.title}</b>
+      <b class="title">{config.title}</b>
     </a>
     <h4>
-      <b>{config.description}</b>
+      <b class="tagline">{config.tagline}</b>
     </h4>
   </div>
   <ul class="links">
@@ -36,6 +36,18 @@
     display: flex;
     flex-direction: column;
     gap: var(--size-2);
+  }
+
+  .title {
+    font-size: var(--size-7);
+    font-weight: 700;
+    color: var(--text-1);
+  }
+
+  .tagline {
+    font-size: var(--size-3);
+    font-weight: 400;
+    color: var(--text-2);
   }
 
   .links {

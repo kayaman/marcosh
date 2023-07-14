@@ -27,7 +27,7 @@
   }
 
   .post {
-    max-inline-size: var(--size-content-3);
+    max-inline-size: var(--size-content-lg);
   }
 
   .post:not(:last-child) {
@@ -36,7 +36,7 @@
   }
 
   .title {
-    font-size: var(--font-size-fluid-3);
+    font-size: var(--font-size-fluid-2);
     text-transform: capitalize;
   }
 
@@ -46,5 +46,6 @@
 
   .description {
     margin-top: var(--size-3);
+    max-inline-size: var(--size-content-lg);
   }
 </style>

@@ -6,6 +6,8 @@ html {
   --font-sans: 'Manrope', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
 
+  --size-content-lg: 90%;
+
   /* dark */
   --brand-dark: var(--orange-3);
   --text-1-dark: var(--gray-3);
@@ -143,7 +145,7 @@ li {
 }
 
 .prose :is(ul, ol) {
-  list-style-type: '🔥';
+  list-style-type: '🎯';
   padding-left: var(--size-5);
 }
 
@@ -155,6 +157,6 @@ li {
 .prose pre {
   max-inline-size: 100%;
   padding: var(--size-3);
-  border-radius: var(--radius-3);
+  border-radius: var(--radius-2);
   tab-size: 2;
 }
