@@ -8,15 +8,11 @@ categories:
 published: true
 ---
 
-# Create a T3 simple application for fun
-
-[audience #begineers]
-
 ## WTF is T3 stack?
 
 [T3-Stack](https://create.t3.gg/)
 
-Disclaimer: currently the create t3-app isn't using the new Next.js 13 App Router. We won't be using it in this article.
+Disclaimer: currently the create t3-app isn't using the new Next.js 13 App Router. We won't be using it in this article. Check out [this effort](https://github.com/trpc/next-13) for more details.
 
 ## Bootstrapping
 

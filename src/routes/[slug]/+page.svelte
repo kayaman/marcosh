@@ -34,6 +34,7 @@
   }
 
   h1 {
+    font-size: var(--font-size-fluid-1);
     text-transform: capitalize;
     max-inline-size: inherit;
 

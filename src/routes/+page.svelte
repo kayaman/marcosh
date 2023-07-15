@@ -45,6 +45,7 @@
   }
 
   .description {
+    font-size: var(--size-3);
     margin-top: var(--size-3);
     max-inline-size: var(--size-content-lg);
   }

@@ -2,19 +2,19 @@
   import { fly } from 'svelte/transition'
   import { Moon, Sun } from 'lucide-svelte'
   import { setTheme, theme, toggleTheme } from '$lib/stores'
-  const returnNada = () => '';
+  const returnNothing = (something: any) => '';
 </script>
 
 <button on:click={toggleTheme} aria-label="Toggle theme">
 {#if $theme === 'dark'}
-  {returnNada(setTheme('dark'))}
+  {returnNothing(setTheme('dark'))}
   <div in:fly={{ y: 10 }}>
     <Sun />
   </div>
 
   {:else}
   <div in:fly={{ y: 10 }}>
-    {returnNada(setTheme('light'))}
+    {returnNothing(setTheme('light'))}
     <Moon />
   </div>
 {/if}
