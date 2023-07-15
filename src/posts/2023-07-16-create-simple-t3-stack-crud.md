@@ -1,7 +1,7 @@
 ---
 title: Create a T3 simple application
 description: Create a T3 simple application for fun
-date: '2023-07-16'
+date: '2023-07-14'
 categories:
   - typescript
   - t3stack
