@@ -36,6 +36,7 @@
   h1 {
     text-transform: capitalize;
     max-inline-size: inherit;
+
   }
 
   h1 + p {

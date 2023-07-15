@@ -1,7 +1,15 @@
+<script>
+
+  import * as config from '$lib/config'
+
+</script>
 
 <article>
   <h1>About</h1>
   <img src="marco.jpg" alt="Marco" width="200" height="200">
+
+  <p class="role">{config.role}</p>
+  <p class="company">{config.company}</p>
 
   <div class="about">
     <p>
@@ -31,6 +39,17 @@
     color: var(--text-1);
     padding: var(--size-1);
     align-self: flex-start;
+  }
+
+  .role {
+    font-size: var(--size-3);
+    color: var(--text-1);
+    padding-top: var(--size-1);
+  }
+
+  .company {
+    font-size: var(--size-3);
+    color: var(--text-2);
   }
   article {
     display: flex;
