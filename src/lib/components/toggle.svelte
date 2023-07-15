@@ -2,7 +2,7 @@
   import { fly } from 'svelte/transition'
   import { Moon, Sun } from 'lucide-svelte'
   import { setTheme, theme, toggleTheme } from '$lib/stores'
-  const returnNothing = (something: any) => '';
+  const returnNothing = (anything: any) => '';
 </script>
 
 <button on:click={toggleTheme} aria-label="Toggle theme">
