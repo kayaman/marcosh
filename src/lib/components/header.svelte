@@ -24,7 +24,7 @@
       <Toggle />
     </li>
     <li>
-      <a href="/feed.xml" target="_blank"><Rss /></a>
+      <a href="/feed.xml" target="_blank" class="in"><Rss display="inline"/></a>
     </li>
   </ul>
 </nav>
@@ -66,7 +66,11 @@
     padding-block-end: var(--size-7);
   }
 
-  li:is(:last-child) a {
+  li a {
+    display: inline;
+  }
+
+  .in {
     display: inline;
   }
 
