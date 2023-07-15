@@ -1,6 +1,7 @@
 <script lang="ts">
   import * as config from '$lib/config'
   import Toggle from '$lib/components/toggle.svelte'
+  import { Rss } from 'lucide-svelte'
 </script>
 
 <nav>
@@ -20,22 +21,23 @@
       <a href="/contact">Contact</a>
     </li>
     <li>
-      <a href="/feed.xml" target="_blank">RSS</a>
+      <Toggle />
+    </li>
+    <li>
+      <a href="/feed.xml" target="_blank"><Rss /></a>
     </li>
   </ul>
-
-  <Toggle />
 </nav>
 
 <style>
   nav {
-    padding-block: var(--size-7);
+    padding-block-start: var(--size-1);
   }
 
   div {
     display: flex;
     flex-direction: column;
-    gap: var(--size-2);
+    gap: var(--size-1);
   }
 
   .title {
@@ -45,13 +47,14 @@
   }
 
   .tagline {
+    color: var(--text-2);
     font-size: var(--size-3);
     font-weight: 400;
-    color: var(--text-2);
   }
 
   .links {
-    margin-block: var(--size-7);
+    margin-block: var(--size-3);
+    right: var(--size-7);
   }
 
   a {
@@ -59,8 +62,20 @@
     text-decoration: none;
   }
 
+  ul {
+    padding-block-end: var(--size-7);
+  }
+
+  li:is(:last-child) a {
+    display: inline;
+  }
+
   h4 {
     position: relative;
+  }
+
+  li {
+    vertical-align: top;
   }
 
   @media (min-width: 768px) {
