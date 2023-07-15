@@ -9,6 +9,11 @@ export type Category =
   | 'all'
   | 'none'
   | 't3stack'
+  | 'blog'
+  | 'pkm'
+  | 'productivity'
+  | 'career'
+  | 'bookmarks'
 
 export type Post = {
   title: string

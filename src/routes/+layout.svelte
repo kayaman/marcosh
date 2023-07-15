@@ -30,11 +30,11 @@
     height: 100%;
     grid-template-rows: auto 1fr auto;
     margin-inline: auto;
-    padding-inline: var(--size-7);
+    padding-inline: var(--size-3);
   }
 
   main {
-    padding-block: var(--size-9);
+    padding-block: var(--size-1);
   }
 
   @media (min-width: 1440px) {
