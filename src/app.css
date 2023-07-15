@@ -159,4 +159,5 @@ li {
   padding: var(--size-3);
   border-radius: var(--radius-2);
   tab-size: 2;
+  white-space: pre-wrap;
 }
