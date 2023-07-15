@@ -1,7 +1,7 @@
 <script lang="ts">
   import * as config from '$lib/config'
   import { theme } from '$lib/stores'
-  import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from 'lucide-svelte'
+  import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon, Code2Icon } from 'lucide-svelte'
   import BookmarcoDM from './Bookmarco_dark_mode.svelte';
   import BookmarcoLM from './Bookmarco_light_mode.svelte';
 
@@ -22,7 +22,8 @@
   <p><span>{config.bottomline}</span></p>
   <p>{config.title} &copy; {new Date().getFullYear()}</p>
   <p>
-    <a href="https://github.com/kayaman" target="_blank"><GithubIcon display="inline" size="18"/></a>
+    <a href="https://github.com/kayaman" target="_blank"><GithubIcon display="inline" size="20"/></a>
+    <a href="https://github.com/kayaman/marcosh" target="_blank"><Code2Icon display="inline" size="20"/></a>
     <a href="https://bookma.rco.sh" target="_blank"><svelte:component this={selectedTheme} /></a>
     <a href="https://linkedin.com/in/marcoantoniogonzalezjunior" target="_blank"><LinkedinIcon display="inline" size="20"/></a>
     <a href="https://twitter.com/kayaman" target="_blank"><TwitterIcon display="inline" size="20"/></a>
