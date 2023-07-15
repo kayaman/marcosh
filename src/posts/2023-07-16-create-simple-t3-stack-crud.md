@@ -31,11 +31,6 @@ docker-compose --version
 pnpm create t3-app@latest
 ```
 
-     ___ ___ ___   __ _____ ___   _____ ____    __   ___ ___
-    / __| _ \ __| /  \_   _| __| |_   _|__ /   /  \ | _ \ _ \
-     (__|   / _| / /\ \| | | _|    | |  |_ \  / /\ \|  _/  _/
-    \___|_|_\___|_/‾‾\_\_| |___|   |_| |___/ /_/‾‾\_\_| |_|
-
 <pre>
 ? What will your project be called? <u><b>things-t3-demo</b></u>
 ? Will you be using TypeScript or JavaScript? <u><b>TypeScript</b></u>
@@ -395,6 +390,8 @@ Add it to the `.env` file at the project root. Example:
 ```
 NEXTAUTH_SECRET="g6rESogW4LAHYICqdbbjol3VUwJm/mLwUXopGVEM5RY="
 ```
+
+## TO BE CONTINUED...
 
 ## References
 

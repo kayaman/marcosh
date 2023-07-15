@@ -25,9 +25,7 @@
     </p>
 
     <p>
-      Over the last months I dedicated all my free time to studying and learning emerging technologies and frameworks. I love to learn new things and got excited about the number of new stacks I've found along the way. The list is huge. TypeScript, NextJS (React), Svelte, NestJS, tRPC, Vite, Astro, Prisma and many others! And it doesn't seem to end. I would love to get an opportunitty to work with new stuff like this ones!
-
-      Zod,
+      Over the last months I dedicated all my free time to studying and learning emerging technologies and frameworks. I love to learn new things and got excited about the number of new stacks I've found along the way. The list is huge. TypeScript, NextJS (React), Svelte, NestJS, tRPC, Vite, Astro, Prisma, Zod and many others! And it doesn't seem to end. I would love to get an opportunitty to work with new stuff like this ones!
     </p>
   </div>
 
