@@ -1,12 +1,22 @@
 <script lang="ts">
   import * as config from '$lib/config'
-  import { GithubIcon } from 'lucide-svelte'
+  import { GithubIcon, LinkedinIcon, TwitterIcon, InstagramIcon } from 'lucide-svelte'
+  import BookmarcoDM from './Bookmarco_dark_mode.svelte';
+  import BookmarcoLM from './Bookmarco_light_mode.svelte';
 </script>
 
 <footer>
   
-  <p><a href="https://github.com/kayaman/marcosh" target="_blank"><GithubIcon size="14" display="inline"/></a><span>{config.bottomline}</span></p>
+  <p><span>{config.bottomline}</span></p>
   <p>{config.title} &copy; {new Date().getFullYear()}</p>
+  <p>
+    <a href="https://github.com/kayaman" target="_blank"><GithubIcon display="inline" size="18"/></a>
+    <a href="https://bookma.rco.sh" target="_blank"><svelte:component this={BookmarcoDM} /></a>
+    <a href="https://linkedin.com/in/marcoantoniogonzalezjunior" target="_blank"><LinkedinIcon display="inline" size="20"/></a>
+    <a href="https://twitter.com/kayaman" target="_blank"><TwitterIcon display="inline" size="20"/></a>
+    <a href="https://instagram.com/marcoantoniogonzalezjunior" target="_blank"><InstagramIcon display="inline" size="20"/></a>
+
+  </p>
 </footer>
 
 <style>
@@ -34,7 +44,5 @@
     display: inline-flex;
     color: var(--text-1);
   }
-
-
   
 </style>

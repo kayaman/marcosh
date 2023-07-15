@@ -42,4 +42,27 @@
     border-radius: 99999px;
   }
 
+  .about {
+    color: var(--text-2);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    padding-block-start: var(--size-5);
+    max-width: 650px;
+    font-size: 115%;
+    line-height: 1.4;
+  }
+
+  article * p {
+    padding-block-start: var(--size-5);
+  }
+
+  article * p:first-child::first-letter {
+    color: var(--text-1);
+    float: left;
+    font-family: Georgia;
+    font-size: 50px;
+    line-height: 45px;
+    padding-right: var(--size-2);
+    padding-left: var(--size-1);
+}
+
 </style>
