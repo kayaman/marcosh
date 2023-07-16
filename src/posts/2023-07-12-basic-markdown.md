@@ -42,12 +42,9 @@ GFM - Github Flavored Markdown
 
 4. Emphasis
 
-```markdown
-_This text_ is italic.
+```
 _This text_ is italic.
 **This text** is bold.
-**This text** is bold.
-**_This text_** is bold and italic.
 **_This text_** is bold and italic.
 ```
 
