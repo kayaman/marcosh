@@ -1,7 +1,7 @@
 ---
 title: Basic Markdown
 description: Basic Markdown Course Study Notes
-date: '2023-07-00'
+date: '2023-07-12'
 categories:
   - markdown
   - learning
