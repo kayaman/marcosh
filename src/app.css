@@ -89,6 +89,8 @@ html {
   --border: var(--border-light);
 }
 
+@custom-media --md-phone (--md-only) and (--portrait);
+
 html,
 body {
   height: 100%;

@@ -24,14 +24,18 @@
       <Toggle />
     </li>
     <li>
-      <a href="/feed.xml" target="_blank" class="in"><Rss display="inline"/></a>
+      <a href="/feed.xml" target="_blank"><Rss style="display: inline"/></a>
     </li>
   </ul>
 </nav>
 
 <style>
   nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding-block-start: var(--size-1);
+    padding-block-end: var(--size-5);
   }
 
   div {
@@ -53,7 +57,11 @@
   }
 
   .links {
-    margin-block: var(--size-3);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: var(--size-2);
+    margin-block: var(--size-1);
     right: var(--size-7);
   }
 
@@ -63,15 +71,7 @@
   }
 
   ul {
-    padding-block-end: var(--size-7);
-  }
-
-  li a {
-    display: inline;
-  }
-
-  .in {
-    display: inline;
+    padding-block-end: var(--size-2);
   }
 
   h4 {
@@ -82,17 +82,20 @@
     vertical-align: top;
   }
 
-  @media (min-width: 768px) {
+  @media(width <= 480px) and (orientation: portrait) {
     nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      padding-block-end: var(--size-1);
+    }
+    .tagline {
+      display: none;
+      visibility: hidden;
     }
 
+    .title {
+      font-size: var(--size-6);
+    }
     .links {
-      display: flex;
-      gap: var(--size-7);
-      margin-block: 0;
+      font-size: var(--size-3);
     }
   }
 </style>
