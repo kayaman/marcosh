@@ -18,7 +18,7 @@
 
 <footer>
   
-  <p><span>{config.bottomline}</span></p>
+  <p>{config.bottomline}</p>
   <p>{config.title} &copy; {new Date().getFullYear()}</p>
   <p>
     <a href="https://github.com/kayaman" target="_blank"><GithubIcon aria-label="GitHub" display="inline" size="20"/></a>
@@ -48,14 +48,22 @@
     color: var(--text-1);
     vertical-align: middle;
   }
-
-  span {
-    padding-left: var(--size-1);
-  }
-
   a {
     display: inline-flex;
     color: var(--text-1);
+  }
+
+  @media(width <= 480px) and (orientation: portrait) {
+
+    footer {
+      align-items: center;
+      justify-content: center;
+    }
+    footer p:not(:last-child) {
+      display: none;
+      visibility: hidden;
+    }
+
   }
   
 </style>
