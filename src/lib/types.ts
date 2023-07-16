@@ -19,6 +19,7 @@ export type Category =
   | 'study-notes'
   | 'markdown'
   | 'course'
+  | 'tdd'
 
 export type Post = {
   title: string

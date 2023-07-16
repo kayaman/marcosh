@@ -17,6 +17,7 @@ Whats is Svelte?
 ## 2. The Svelte Compiler
 
 Compare the payloads of React and Svelte.
+Svelte Materialify Playground
 
 ```javascript
 import './App.css'
@@ -32,6 +33,38 @@ export default function App() {
 </script>
 
 <h1>🔥 Svelte</h1>
+```
+
+3. Svelte Basics
+
+```svelte
+<script>
+  let count = 0
+
+  function increment() {
+    count += 1
+  }
+</script>
+
+<p>Clicked {count} {count === 1 ? 'time' : 'times'}</p>
+<button on:click={increment}>Click</button>
+```
+
+4. Reactivity
+
+`console.log` is rerun when `count` changes.
+
+```svelte
+<script>
+  let count = 0
+  $: console.log(count)
+</script>
+
+<button
+  on:click={() => {
+    count += 1
+  }}>Click</button
+>
 ```
 
 ## References

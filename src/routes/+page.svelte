@@ -23,7 +23,7 @@
 <style>
   .posts {
     display: grid;
-    gap: var(--size-7);
+    gap: var(--size-2);
   }
 
   .post {
@@ -49,4 +49,12 @@
     margin-top: var(--size-3);
     max-inline-size: var(--size-content-lg);
   }
+
+
+  @media(width <= 480px) and (orientation: portrait) {
+    .title {
+      font-size: var(--size-3);
+    }
+  }
+
 </style>
