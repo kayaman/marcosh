@@ -14,17 +14,14 @@ published: true
 
 Separate by one empty line.
 
-```markdown
 This is a paragraph.
 
 This is another paragraph.
-```
 
 Put two spaces at the end of a line for a line break.
 
 2. Headings
 
-```markdown
 # Heading h1
 
 ## Heading h2
@@ -36,7 +33,6 @@ Put two spaces at the end of a line for a line break.
 ##### Heading h5
 
 ###### Heading h6
-```
 
 3. Markdown Flavors
 
