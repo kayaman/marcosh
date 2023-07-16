@@ -14,6 +14,11 @@ export type Category =
   | 'productivity'
   | 'career'
   | 'bookmarks'
+  | 'learning'
+  | 'personal'
+  | 'study-notes'
+  | 'markdown'
+  | 'course'
 
 export type Post = {
   title: string
