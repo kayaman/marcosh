@@ -64,6 +64,10 @@
       visibility: hidden;
     }
 
+    a {
+      padding-inline-start: var(--size-2);
+    }
+
   }
   
 </style>
