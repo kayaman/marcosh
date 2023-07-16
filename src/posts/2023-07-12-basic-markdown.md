@@ -14,14 +14,17 @@ published: true
 
 Separate by one empty line.
 
+```markdown
 This is a paragraph.
 
 This is another paragraph.
+```
 
 Put two spaces at the end of a line for a line break.
 
 2. Headings
 
+```markdown
 # Heading h1
 
 ## Heading h2
@@ -33,6 +36,7 @@ Put two spaces at the end of a line for a line break.
 ##### Heading h5
 
 ###### Heading h6
+```
 
 3. Markdown Flavors
 
@@ -42,7 +46,7 @@ GFM - Github Flavored Markdown
 
 4. Emphasis
 
-```
+```markdown
 _This text_ is italic.
 **This text** is bold.
 **_This text_** is bold and italic.
