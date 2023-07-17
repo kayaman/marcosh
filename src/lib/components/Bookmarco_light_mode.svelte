@@ -1,5 +1,5 @@
 <svg version="1.1" id="katman_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="22px" height="22px" viewBox="0 0 700 700" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+	 width="24px" height="24px" viewBox="0 0 700 700" style="enable-background:new 0 0 20 20;" xml:space="preserve">
 <g>
 	<path fill="#343a40" d="M319.9,107.8c-63.7,39.2-101.5,94.5-111,167.8c-6.8,52.6,4.8,101.5,33,146.4c21.3,33.9,49.9,60.2,85.5,78.7
 		c35.3,18.4,72.9,26.5,112.7,25c40-1.5,76.6-13.7,112.2-35.3c-43.3,66.4-149.2,124.4-263.2,91.3c-119.4-34.7-195.2-155.2-173-275.1

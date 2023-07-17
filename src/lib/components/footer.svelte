@@ -21,13 +21,13 @@
   <p>{config.bottomline}</p>
   <p>{config.title} &copy; {new Date().getFullYear()}</p>
   <p>
-    <a href="https://github.com/kayaman" target="_blank"><GithubIcon aria-label="GitHub" display="inline" size="20"/></a>
-    <a href="https://github.com/kayaman/marcosh" target="_blank"><Code2Icon aria-label="Blog" display="inline" size="20"/></a>
+    <a href="https://github.com/kayaman" target="_blank"><GithubIcon aria-label="GitHub" display="inline" size="22"/></a>
+    <a href="https://github.com/kayaman/marcosh" target="_blank"><Code2Icon aria-label="Blog" display="inline" size="24"/></a>
     <a href="https://bookma.rco.sh" target="_blank" aria-label="Blogmarks"><svelte:component this={selectedTheme} /></a>
-    <a href="https://linkedin.com/in/marcoantoniogonzalezjunior" target="_blank"><LinkedinIcon display="inline" size="20" aria-label="LinkedIn" /></a>
-    <a href="https://github.com/kayaman/resume/blob/main/MarcoAntonioGonzalezJunior_en.pdf" target="_blank"><FileTextIcon aria-label="Résumé" display="inline" size="20"/></a>
-    <a href="https://twitter.com/kayaman" target="_blank"><TwitterIcon aria-label="Twitter" display="inline" size="20"/></a>
-    <a href="https://instagram.com/marcoantoniogonzalezjunior" target="_blank"><InstagramIcon aria-label="Instagram" display="inline" size="20" /></a>
+    <a href="https://linkedin.com/in/marcoantoniogonzalezjunior" target="_blank"><LinkedinIcon display="inline" size="24" aria-label="LinkedIn" /></a>
+    <a href="https://github.com/kayaman/resume/blob/main/MarcoAntonioGonzalezJunior_en.pdf" target="_blank"><FileTextIcon aria-label="Résumé" display="inline" size="24"/></a>
+    <a href="https://twitter.com/kayaman" target="_blank"><TwitterIcon aria-label="Twitter" display="inline" size="24"/></a>
+    <a href="https://instagram.com/marcoantoniogonzalezjunior" target="_blank"><InstagramIcon aria-label="Instagram" display="inline" size="24" /></a>
 
   </p>
 </footer>
