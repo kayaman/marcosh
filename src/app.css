@@ -12,6 +12,8 @@ html {
   --brand-dark: var(--teal-6);
   --text-1-dark: var(--gray-3);
   --text-2-dark: var(--gray-5);
+  --text-3-dark: var(--gray-7);
+  --text-4-dark: var(--gray-8);
   --surface-1-dark: var(--gray-12);
   --surface-2-dark: var(--gray-11);
   --surface-3-dark: var(--gray-10);
@@ -19,11 +21,15 @@ html {
   --background-dark: var(--gradient-8);
   --border-dark: var(--gray-9);
   --anchor-visited-dark: var(--cyan-6);
+  --tag-bg-dark: var(--indigo-10);
+  --tag-color-dark: var(--gray-4);
 
   /* light */
   --brand-light: var(--teal-10);
   --text-1-light: var(--gray-8);
   --text-2-light: var(--gray-7);
+  --text-3-light: var(--gray-6);
+  --text-4-light: var(--gray-5);
   --surface-1-light: var(--gray-0);
   --surface-2-light: var(--gray-1);
   --surface-3-light: var(--gray-2);
@@ -31,11 +37,15 @@ html {
   --background-light: none;
   --border-light: var(--gray-4);
   --anchor-visited-light: var(--cyan-10);
+  --tag-bg-light: var(--indigo-10);
+  --tag-color-light: var(--gray-3);
 
   /* dim */
   --brand-dim: var(--teal-6);
   --text-1-dim: var(--gray-3);
   --text-2-dim: var(--gray-4);
+  --text-3-dim: var(--gray-5);
+  --text-4-dim: var(--gray-4);
   --surface-1-dim: var(--gray-8);
   --surface-2-dim: var(--gray-7);
   --surface-3-dim: var(--gray-6);
@@ -44,6 +54,8 @@ html {
   --surface-shadow-dim: var(--gray-9-hsl);
   --shadow-strength-dim: 20%;
   --anchor-visited-dim: var(--cyan-6);
+  --tag-bg-dim: var(--indigo-8);
+  --tag-color-dim: var(--gray-4);
 }
 
 :root {
@@ -52,6 +64,8 @@ html {
   --brand: var(--brand-dark);
   --text-1: var(--text-1-dark);
   --text-2: var(--text-2-dark);
+  --text-3: var(--text-3-dark);
+  --text-4: var(--text-4-dark);
   --surface-1: var(--surface-1-dark);
   --surface-2: var(--surface-2-dark);
   --surface-3: var(--surface-3-dark);
@@ -59,6 +73,8 @@ html {
   --background: var(--background-dark);
   --border: var(--border-dark);
   --anchor-visited: var(--anchor-visited-dark);
+  --tag-bg: var(--tag-bg-dark);
+  --tag-color: var(--tag-color-dark);
 }
 
 @media (prefers-color-scheme: light) {
@@ -68,6 +84,8 @@ html {
     --brand: var(--brand-light);
     --text-1: var(--text-1-light);
     --text-2: var(--text-2-light);
+    --text-3: var(--text-3-light);
+    --text-4: var(--text-4-light);
     --surface-1: var(--surface-1-light);
     --surface-2: var(--surface-2-light);
     --surface-3: var(--surface-3-light);
@@ -75,6 +93,8 @@ html {
     --background: var(--background-light);
     --border: var(--border-light);
     --anchor-visited: var(--anchor-visited-light);
+    --tag-bg: var(--tag-bg-light);
+    --tag-color: var(--tag-color-light);
   }
 }
 
@@ -84,6 +104,8 @@ html {
   --brand: var(--brand-dark);
   --text-1: var(--text-1-dark);
   --text-2: var(--text-2-dark);
+  --text-3: var(--text-3-dark);
+  --text-4: var(--text-4-dark);
   --surface-1: var(--surface-1-dark);
   --surface-2: var(--surface-2-dark);
   --surface-3: var(--surface-3-dark);
@@ -91,6 +113,8 @@ html {
   --background: var(--background-dark);
   --border: var(--border-dark);
   --anchor-visited: var(--anchor-visited-dark);
+  --tag-bg: var(--tag-bg-dark);
+  --tag-color: var(--tag-color-dark);
 }
 
 [color-scheme='light'] {
@@ -99,6 +123,8 @@ html {
   --brand: var(--brand-light);
   --text-1: var(--text-1-light);
   --text-2: var(--text-2-light);
+  --text-3: var(--text-3-light);
+  --text-4: var(--text-4-light);
   --surface-1: var(--surface-1-light);
   --surface-2: var(--surface-2-light);
   --surface-3: var(--surface-3-light);
@@ -106,6 +132,8 @@ html {
   --background: var(--background-light);
   --border: var(--border-light);
   --anchor-visited: var(--anchor-visited-light);
+  --tag-bg: var(--tag-bg-light);
+  --tag-color: var(--tag-color-light);
 }
 
 [color-scheme='dim'] {
@@ -114,6 +142,8 @@ html {
   --brand: var(--brand-dim);
   --text-1: var(--text-1-dim);
   --text-2: var(--text-2-dim);
+  --text-3: var(--text-3-dim);
+  --text-4: var(--text-4-dim);
   --surface-1: var(--surface-1-dim);
   --surface-2: var(--surface-2-dim);
   --surface-3: var(--surface-3-dim);
@@ -123,6 +153,8 @@ html {
   --shadow-strength: var(--shadow-strength-dim);
   --border: var(--border-dark);
   --anchor-visited: var(--anchor-visited-dim);
+  --tag-bg: var(--tag-bg-dim);
+  --tag-color: var(--tag-color-dim);
 }
 
 html,
@@ -195,8 +227,9 @@ li {
 }
 
 .prose pre {
+  font-size: var(--size-2);
   max-inline-size: 100%;
-  padding: var(--size-3);
+  padding: var(--size-2);
   border-radius: var(--radius-2);
   tab-size: 2;
   white-space: pre-wrap;

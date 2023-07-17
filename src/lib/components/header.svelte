@@ -57,6 +57,7 @@
   }
 
   .links {
+    color: var(--text-1);
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
