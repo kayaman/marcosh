@@ -8,7 +8,7 @@
   let selectedTheme = BookmarcoDM
 
   theme.subscribe(value => {
-    if (value === 'dark') {
+    if (value === 'dark' || value === 'dim') {
       selectedTheme = BookmarcoDM
     } else {
       selectedTheme = BookmarcoLM
