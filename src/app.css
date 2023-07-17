@@ -9,7 +9,7 @@ html {
   --size-content-lg: 90%;
 
   /* dark */
-  --brand-dark: var(--teal-8);
+  --brand-dark: var(--teal-6);
   --text-1-dark: var(--gray-3);
   --text-2-dark: var(--gray-5);
   --surface-1-dark: var(--gray-12);
@@ -18,7 +18,7 @@ html {
   --surface-4-dark: var(--gray-9);
   --background-dark: var(--gradient-8);
   --border-dark: var(--gray-9);
-  --anchor-visited-dark: var(--cyan-8);
+  --anchor-visited-dark: var(--cyan-6);
 
   /* light */
   --brand-light: var(--teal-10);
@@ -33,7 +33,7 @@ html {
   --anchor-visited-light: var(--cyan-10);
 
   /* dim */
-  --brand-dim: var(--teal-9);
+  --brand-dim: var(--teal-6);
   --text-1-dim: var(--gray-3);
   --text-2-dim: var(--gray-4);
   --surface-1-dim: var(--gray-8);
@@ -43,7 +43,7 @@ html {
   --background-dim: var(--gray-9);
   --surface-shadow-dim: var(--gray-9-hsl);
   --shadow-strength-dim: 20%;
-  --anchor-visited-dim: var(--cyan-9);
+  --anchor-visited-dim: var(--cyan-6);
 }
 
 :root {

@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fly } from 'svelte/transition'
-  import { Moon, Sun, Cloudy } from 'lucide-svelte'
+  import { Moon, Sun, CloudMoon } from 'lucide-svelte'
   import { setTheme, theme, toggleTheme } from '$lib/stores'
   const returnNothing = (anything: any) => '';
 </script>
@@ -15,7 +15,7 @@
   {:else if $theme === 'light'}
   <div in:fly={{ y: 10 }}>
     {returnNothing(setTheme('light'))}
-    <Cloudy />
+    <CloudMoon />
   </div>
 
   {:else}
