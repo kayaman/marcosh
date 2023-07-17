@@ -13,12 +13,12 @@
 <article>
   <hggroup>
     <h1>{data.meta.title}</h1>
-    <p>Published at {formatDate(data.meta.date)}</p>
+    <p class="date">Published at {formatDate(data.meta.date)}</p>
   </hggroup>
 
   <div class="tags">
     {#each data.meta.categories as tag}
-      <span class="surface-4">&num;{tag}</span>
+      <span class="tag">&num;{tag}</span>
     {/each}
   </div>
 
@@ -34,25 +34,31 @@
   }
 
   h1 {
-    font-size: var(--font-size-fluid-1);
+    font-size: var(--size-fluid-2);
     text-transform: capitalize;
     max-inline-size: inherit;
 
   }
 
-  h1 + p {
-    margin-top: var(--size-2);
-    color: var(--text-2);
+  .date {
+    color: var(--text-3);
+    font-size: var(--size-2);
   }
+  .tag {
+    font-size: var(--size-2);
+    display: inline-block;
+    border-radius: 3px;
+    padding: .1em .15em .1em;
+    border-radius: 2px;
+    background: var(--tag-bg);
+    color: var(--tag-color);
+    font-weight: 600;
+    margin: .1em .1em
+}
 
   .tags {
     display: flex;
-    gap: var(--size-3);
-    margin-top: var(--size-7);
-  }
-
-  .tags > * {
-    padding: var(--size-2);
-    border-radius: var(--radius-3);
+    gap: var(--size-1);
+    margin-top: var(--size-1);
   }
 </style>

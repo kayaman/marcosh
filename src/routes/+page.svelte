@@ -36,12 +36,12 @@
   }
 
   .title {
-    font-size: var(--font-size-fluid-1);
+    font-size: var(--size-fluid-10);
     text-transform: capitalize;
   }
 
   .date {
-    color: var(--text-2);
+    color: var(--text-3);
     font-size: var(--size-2);
   }
 
