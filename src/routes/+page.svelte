@@ -42,6 +42,7 @@
 
   .date {
     color: var(--text-2);
+    font-size: var(--size-2);
   }
 
   .description {
@@ -54,6 +55,16 @@
   @media(width <= 480px) and (orientation: portrait) {
     .title {
       font-size: var(--size-3);
+    }
+
+    .description {
+      display: none;
+      visibility: hidden;
+    }
+
+    .post:not(:last-child) {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: var(--size-2);
     }
   }
 

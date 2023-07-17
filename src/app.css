@@ -9,7 +9,7 @@ html {
   --size-content-lg: 90%;
 
   /* dark */
-  --brand-dark: var(--teal-6);
+  --brand-dark: var(--teal-8);
   --text-1-dark: var(--gray-3);
   --text-2-dark: var(--gray-5);
   --surface-1-dark: var(--gray-12);
@@ -18,6 +18,7 @@ html {
   --surface-4-dark: var(--gray-9);
   --background-dark: var(--gradient-8);
   --border-dark: var(--gray-9);
+  --anchor-visited-dark: var(--cyan-8);
 
   /* light */
   --brand-light: var(--teal-10);
@@ -29,18 +30,20 @@ html {
   --surface-4-light: var(--gray-3);
   --background-light: none;
   --border-light: var(--gray-4);
+  --anchor-visited-light: var(--cyan-10);
 
   /* dim */
-  --brand-dim: var(--teal-8);
+  --brand-dim: var(--teal-9);
   --text-1-dim: var(--gray-3);
   --text-2-dim: var(--gray-4);
   --surface-1-dim: var(--gray-8);
   --surface-2-dim: var(--gray-7);
   --surface-3-dim: var(--gray-6);
   --surface-4-dim: var(--gray-5);
-  --background-dim: '#343a40';
+  --background-dim: var(--gray-9);
   --surface-shadow-dim: var(--gray-9-hsl);
   --shadow-strength-dim: 20%;
+  --anchor-visited-dim: var(--cyan-9);
 }
 
 :root {
@@ -55,6 +58,7 @@ html {
   --surface-4: var(--surface-4-dark);
   --background: var(--background-dark);
   --border: var(--border-dark);
+  --anchor-visited: var(--anchor-visited-dark);
 }
 
 @media (prefers-color-scheme: light) {
@@ -70,6 +74,7 @@ html {
     --surface-4: var(--surface-4-light);
     --background: var(--background-light);
     --border: var(--border-light);
+    --anchor-visited: var(--anchor-visited-light);
   }
 }
 
@@ -85,6 +90,7 @@ html {
   --surface-4: var(--surface-4-dark);
   --background: var(--background-dark);
   --border: var(--border-dark);
+  --anchor-visited: var(--anchor-visited-dark);
 }
 
 [color-scheme='light'] {
@@ -99,6 +105,7 @@ html {
   --surface-4: var(--surface-4-light);
   --background: var(--background-light);
   --border: var(--border-light);
+  --anchor-visited: var(--anchor-visited-light);
 }
 
 [color-scheme='dim'] {
@@ -115,6 +122,7 @@ html {
   --surface-shadow: var(--surface-shadow-dim);
   --shadow-strength: var(--shadow-strength-dim);
   --border: var(--border-dark);
+  --anchor-visited: var(--anchor-visited-dim);
 }
 
 html,
@@ -127,6 +135,10 @@ html {
   accent-color: var(--link);
   background-image: var(--background);
   background-attachment: fixed;
+}
+
+a:visited {
+  color: var(--anchor-visited);
 }
 
 img {

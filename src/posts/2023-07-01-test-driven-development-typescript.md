@@ -1,13 +1,13 @@
 ---
 title: TDD Fundamentals with TypeScript
 description: Study notes for Test Driven Design Fundamentals with TypeScript
-date: '2023-07-01'
+date: '2023-07-20'
 categories:
   - tdd
   - typescript
   - learning
   - study-notes
-published: false
+published: true
 ---
 
 ## 1. Introduction
