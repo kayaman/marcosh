@@ -9,7 +9,7 @@ html {
   --size-content-lg: 90%;
 
   /* dark */
-  --brand-dark: var(--teal-8);
+  --brand-dark: var(--teal-6);
   --text-1-dark: var(--gray-3);
   --text-2-dark: var(--gray-5);
   --surface-1-dark: var(--gray-12);
@@ -31,7 +31,7 @@ html {
   --border-light: var(--gray-4);
 
   /* dim */
-  --brand-dim: var(--teal-9);
+  --brand-dim: var(--teal-8);
   --text-1-dim: var(--gray-3);
   --text-2-dim: var(--gray-4);
   --surface-1-dim: var(--gray-8);
