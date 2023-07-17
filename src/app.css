@@ -38,6 +38,7 @@ html {
   --surface-2-dim: var(--gray-7);
   --surface-3-dim: var(--gray-6);
   --surface-4-dim: var(--gray-5);
+  --background-dim: '#343a40';
   --surface-shadow-dim: var(--gray-9-hsl);
   --shadow-strength-dim: 20%;
 }
@@ -110,8 +111,10 @@ html {
   --surface-2: var(--surface-2-dim);
   --surface-3: var(--surface-3-dim);
   --surface-4: var(--surface-4-dim);
+  --background: var(--background-dim);
   --surface-shadow: var(--surface-shadow-dim);
   --shadow-strength: var(--shadow-strength-dim);
+  --border: var(--border-dark);
 }
 
 html,
