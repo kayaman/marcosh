@@ -9,8 +9,6 @@ categories:
 published: true
 ---
 
-# Too much information coming to my brain, driving me insane.
-
 The The Police [song](https://open.spotify.com/track/4Vpc9K0tNyosBkXCjdd9sM?si=ae5fc80561254c61) announced it in 1981, it's still more than true today. The amount of information that we are exposed to is increasing exponentially, and it's driving us insane. If you have a job that requires you to be in front of a computer, you are probably familiar with the feeling of being overwhelmed by the amount of information that you are exposed to. It's not only the amount of information that you are exposed to, but also the amount of information that you need to process.
 
 Working in the software industry, I'm constantly bombarded with information. I'm not only talking about the information that I need to process to do my job, but also the information that I need to process to keep up with the industry. Being a software engineer or a software architect is a very demanding job. You need to be constantly learning new things - oftentimes, you need to recall things you don't quite remember anymore. And you need to be constantly aware of what's going on in the industry. If you don't, you will be left behind.

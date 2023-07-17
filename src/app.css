@@ -9,7 +9,7 @@ html {
   --size-content-lg: 90%;
 
   /* dark */
-  --brand-dark: var(--orange-3);
+  --brand-dark: var(--teal-8);
   --text-1-dark: var(--gray-3);
   --text-2-dark: var(--gray-5);
   --surface-1-dark: var(--gray-12);
@@ -20,7 +20,7 @@ html {
   --border-dark: var(--gray-9);
 
   /* light */
-  --brand-light: var(--orange-10);
+  --brand-light: var(--teal-10);
   --text-1-light: var(--gray-8);
   --text-2-light: var(--gray-7);
   --surface-1-light: var(--gray-0);
@@ -31,7 +31,7 @@ html {
   --border-light: var(--gray-4);
 
   /* dim */
-  --brand-dim: var(--orange-4);
+  --brand-dim: var(--teal-9);
   --text-1-dim: var(--gray-3);
   --text-2-dim: var(--gray-4);
   --surface-1-dim: var(--gray-8);
