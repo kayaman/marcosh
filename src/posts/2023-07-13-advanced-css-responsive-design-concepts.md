@@ -1,5 +1,5 @@
 ---
-title: Advanced CSS Responsive Design Concepts.
+title: CSS Responsive Design Concepts
 description: CSS study notes - selectors, media queries, and responsive design.
 date: '2023-07-15'
 categories:

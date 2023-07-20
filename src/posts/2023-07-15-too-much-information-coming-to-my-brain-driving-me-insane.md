@@ -1,5 +1,5 @@
 ---
-title: Too much information coming to my brain, driving me insane.
+title: Too much information, driving me insane.
 description: What's this about and what's next?
 date: '2023-07-15'
 categories:

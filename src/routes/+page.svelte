@@ -36,7 +36,7 @@
   }
 
   .title {
-    font-size: var(--size-fluid-10);
+    font-size: var(--size-5);
     text-transform: capitalize;
   }
 
@@ -54,7 +54,7 @@
 
   @media(width <= 480px) and (orientation: portrait) {
     .title {
-      font-size: var(--size-3);
+      font-size: var(--size-fluid-2);
     }
 
     .description {

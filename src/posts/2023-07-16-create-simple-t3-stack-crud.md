@@ -8,13 +8,13 @@ categories:
 published: true
 ---
 
-## WTF is T3 stack?
+### WTF is T3 stack?
 
 [T3-Stack](https://create.t3.gg/)
 
 Disclaimer: currently the create t3-app isn't using the new Next.js 13 App Router. We won't be using it in this article. Check out [this effort](https://github.com/trpc/next-13) for more details.
 
-## Bootstrapping
+### Bootstrapping
 
 ### Dependencies check
 
@@ -25,7 +25,7 @@ docker --version
 docker-compose --version
 ```
 
-### Firing up the create project script
+#### Firing up the create project script
 
 ```sh
 pnpm create t3-app@latest
@@ -61,7 +61,7 @@ If all is well, it's good time to start versioning the code, if you plan to.
 git commit -m "initial commit"
 ```
 
-## Create a PostgreSQL database using Docker Compose
+### Create a PostgreSQL database using Docker Compose
 
 ```sh
 touch docker-compose.yaml
@@ -159,7 +159,7 @@ You can play with the database using the **Prisma Studio** tool. Just run:
 pnpx prisma studio
 ```
 
-## Creating the tRPC API
+### Creating the tRPC API
 
 Navigate your code editor to `src/server/api/routers`. You can remove the file `example.ts`, it won't be used. Create a new file called `things.ts` at the same level. This file will contain the **tRPC** endpoints definition for the `Thing` domain.
 
@@ -265,7 +265,7 @@ tests:
             status: 200
 ```
 
-## Creating the initial UI: Fetch all records
+### Creating the initial UI: Fetch all records
 
 Before further ado, we are going to create the UI to be able to visualize the same records created before, but through our application. Open the `src/pages/index.tsx` and remove everything. Make it look like this:
 
@@ -349,7 +349,7 @@ Finally, insert the following piece of code between the `{/* List everything */}
 
 Before we dive into the boredom of writing the real Create/Read/Update/Delete API. Let's play a little bit with securing our API and get our hands dirty with **NextAuth**.
 
-## **NextAuth**
+### **NextAuth**
 
 We will be using GitHub as a third-party authentication provider. By default `create t3-app` uses **Discord**. So we are going to do a few changes to make it work accordingly.
 
@@ -372,7 +372,7 @@ server: {
 ...
 ```
 
-## Generate NextAuth **secret** environment variable
+### Generate NextAuth **secret** environment variable
 
 Create and copy it to clipboard:
 
@@ -391,9 +391,9 @@ Add it to the `.env` file at the project root. Example:
 NEXTAUTH_SECRET="g6rESogW4LAHYICqdbbjol3VUwJm/mLwUXopGVEM5RY="
 ```
 
-## TO BE CONTINUED...
+### TO BE CONTINUED...
 
-## References
+### References
 
 - xdg-open
 - open
