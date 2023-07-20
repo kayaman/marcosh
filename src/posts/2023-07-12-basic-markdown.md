@@ -169,4 +169,40 @@ asdf
 - [x] Checked
 ```
 
-[The Only Markdown Crash Course You Will Ever Need](https://www.youtube.com/watch?v=_PPWWRV6gbA)
+16. Footnotes
+
+```markdown
+This is a footnote[^1].
+
+[^1]: This is a footnote.
+```
+
+17. Abbreviations
+
+```markdown
+*[HTML]: Hyper Text Markup Language
+*[W3C]:  World Wide Web Consortium
+```
+
+18. Definition Lists
+
+```markdown
+Term 1
+: Definition 1
+Term 2
+: Definition 2
+```
+
+19. Math
+
+```markdown 
+$E=mc^2$
+```
+
+## References
+
+- [Markdown Spec](https://spec-md.com/)
+- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
+- [Markdown Guide](https://www.markdownguide.org/)
+- [Basic Markdown](https://www.markdowntutorial.com/)
+- [Daring Fireball](https://daringfireball.net/projects/markdown/syntax)

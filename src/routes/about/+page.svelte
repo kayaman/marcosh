@@ -5,7 +5,6 @@
 </script>
 
 <article>
-  <h1>About</h1>
   <img src="marco.jpg" alt="Marco" width="200" height="200">
 
   <p class="role">{config.role}</p>
@@ -25,46 +24,36 @@
     </p>
 
     <p>
-      Over the last months I dedicated all my free time to studying and learning emerging technologies and frameworks. I love to learn new things and got excited about the number of new stacks I've found along the way. The list is huge. TypeScript, NextJS (React), Svelte, NestJS, T3, tRPC, Tailwind, Vite, Astro, Prisma, Zod and many others! And it doesn't seem to end. I would love to get an opportunitty to work with new stuff like this ones!
+      Over the last months I dedicated all my free time to studying and learning emerging technologies and frameworks. I love to learn new things and got excited about the number of new stacks I've found along the way. The list is huge. TypeScript ❤️, Zod, NextJS ❤️, Svelte ❤️, NestJS, T3, tRPC, Tailwind, OpenProps, Vite, Astro, Prisma, Nuxt, Remix and many others! And it doesn't seem to end. I would love to get an opportunitty to work with new stuff like this ones!
     </p>
   </div>
 
 </article>
 
-
 <style>
-
-  h1 {
-    font-size: var(--size-7);
-    color: var(--text-1);
-    padding: var(--size-1);
-    align-self: flex-start;
-  }
-
-  .role {
-    font-size: var(--size-3);
-    color: var(--text-1);
-    padding-top: var(--size-1);
-  }
-
-  .company {
-    font-size: var(--size-3);
-    color: var(--text-2);
-  }
   article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: var(--size-0);
+    padding: var(--size-2);
   }
   img {
     border-radius: 99999px;
   }
+  .role {
+    font-size: var(--size-3);
+    color: var(--text-1);
+    padding-top: var(--size-2);
+  }  
 
+  .company {
+    font-size: var(--size-3);
+    color: var(--text-2);
+  }  
   .about {
     color: var(--text-2);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    padding-block-start: var(--size-5);
+    padding-top: var(--size-1);
     max-width: 650px;
     font-size: 115%;
     line-height: 1.4;

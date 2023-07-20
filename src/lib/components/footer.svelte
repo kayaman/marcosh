@@ -28,7 +28,6 @@
     <a href="https://github.com/kayaman/resume/blob/main/MarcoAntonioGonzalezJunior_en.pdf" target="_blank"><FileTextIcon aria-label="Résumé" display="inline" size="24"/></a>
     <a href="https://twitter.com/kayaman" target="_blank"><TwitterIcon aria-label="Twitter" display="inline" size="24"/></a>
     <a href="https://instagram.com/marcoantoniogonzalezjunior" target="_blank"><InstagramIcon aria-label="Instagram" display="inline" size="24" /></a>
-
   </p>
 </footer>
 
@@ -38,11 +37,8 @@
     flex-direction: row;
     flex-flow: nowrap;
     justify-content: space-between;
-    padding-block: var(--size-5);
-    border-top: 1px solid var(--border);
-    
   }
-
+  
   p {
     font-size: var(--size-3);
     color: var(--text-1);
@@ -51,10 +47,11 @@
   a {
     display: inline-flex;
     color: var(--text-1);
+    padding-inline: var(--size-fluid-2);
   }
-
+  
   @media(width <= 480px) and (orientation: portrait) {
-
+    
     footer {
       align-items: center;
       justify-content: center;
@@ -63,7 +60,7 @@
       display: none;
       visibility: hidden;
     }
-
+    
     a {
       padding-inline-start: var(--size-2);
     }

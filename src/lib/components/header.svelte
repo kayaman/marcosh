@@ -1,7 +1,7 @@
 <script lang="ts">
   import * as config from '$lib/config'
   import Toggle from '$lib/components/toggle.svelte'
-  import { Rss } from 'lucide-svelte'
+  import { PersonStanding, Rss, Mail } from 'lucide-svelte'
 </script>
 
 <nav>
@@ -15,10 +15,10 @@
   </div>
   <ul class="links">
     <li>
-      <a href="/about">About</a>
-    </li>
+      <a href="/about"><PersonStanding size="25" style="display: inline"/></a>
+    </li>    
     <li>
-      <a href="/contact">Contact</a>
+      <a href="mailto:m@rco.sh"><Mail style="display: inline"/></a>
     </li>
     <li>
       <Toggle />

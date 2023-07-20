@@ -67,6 +67,120 @@ export default function App() {
 >
 ```
 
+5. Logic
+
+- Toggle
+
+```svelte
+<script>
+  let user = {
+    loggedIn: false,
+  }
+
+  function toggle() {
+    user.loggedIn = !user.loggedIn
+  }
+</script>
+
+{#if user.loggedIn}
+  <button on:click={toggle}>Log out</button>
+{/if}
+
+{#if !user.loggedIn}
+  <button on:click={toggle}>Log in</button>
+{/if}
+```
+
+- Todos
+
+```svelte
+<script>
+  let todos = [
+    { id: 1, text: 'Todo 1', completed: true },
+    { id: 2, text: 'Todo 2', completed: false },
+    { id: 3, text: 'Todo 3', completed: false },
+    { id: 4, text: 'Todo 4', completed: false },
+  ]
+</script>
+
+<ul>
+  {#each todos as todo}
+    <li>
+      <input checked={todo.completed} type="checkbox" />
+      <span>{todo.text}</span>
+    </li>
+  {/each}
+</ul>
+```
+
+- Data fetching
+
+```svelte
+<script>
+  async function fetchPokemon(pokemonName) {
+    let url = `https://pokeapi.co/api/v2/pokemon/`
+    let response = await fetch(`${url}${pokemonName}`)
+    let { name, sprites } = await response.json()
+
+    return {
+      name,
+      image: sprites['front_default'],
+    }
+  }
+</script>
+
+{#await fetchPokemon('pikachu')}
+  <p>Fetching Pokemon...</p>
+{:then pokemon}
+  <h1>{pokemon.name}</h1>
+  <img src={pokemon.image} alt={pokemon.name} />
+{:catch error}
+  <p>Something went wrong: {error.message}</p>
+{/await}
+```
+
+6. Events
+
+- Directives
+
+```svelte
+<script>
+  let mouse = { x: 0, y: 0 }
+
+  function handleMouseMove(event) {
+    mouse.x = event.clientX
+    mouse.y = event.clientY
+  }
+</script>
+
+<div on:mousemove={handleMouseMove}>
+  The mouse position is {mouse.x} x {mouse.y}
+</div>
+
+<style>
+  div {
+    height: 100vh;
+  }
+</style>
+```
+
+- Event modifiers
+
+```svelte
+<script>
+  function handleSubmit() {
+    console.log('Submit')
+  }
+</script>
+
+<form on:submit|preventDefault={handleSubmit}>
+  <input type="text" />
+  <button type="submit">Submit</button>
+</form>
+```
+
+7. Data Binding
+
 ## References
 
 - [Svelte](https://svelte.dev/)
