@@ -48,7 +48,7 @@
   a {
     display: inline-flex;
     color: var(--text-1);
-    padding-inline: var(--size-fluid-2);
+    padding-inline: var(--size-2);
   }
   
   @media(width <= 480px) and (orientation: portrait) {
