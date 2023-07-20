@@ -37,6 +37,7 @@
     flex-direction: row;
     flex-flow: nowrap;
     justify-content: space-between;
+    padding-block: var(--size-2);
   }
   
   p {
