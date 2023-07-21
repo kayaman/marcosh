@@ -84,7 +84,7 @@ published: true
   </body>
 </html>
 ```
-
+  
 ```css
 .main {
   flex-grow: 1;
@@ -121,7 +121,7 @@ published: true
   </body>
 </html>
 ```
-
+  
 ```css
 .box {
   background: red;
@@ -153,7 +153,7 @@ published: true
   </body>
 </html>
 ```
-
+  
 ```css
 .box {
   background: red;
@@ -203,7 +203,7 @@ published: true
   </body>
 </html>
 ```
-
+  
 ```css
 body {
   display: flex;
@@ -242,7 +242,7 @@ body {
   </body>
 </html>
 ```
-
+  
 ```css
 body {
   display: flex;
@@ -294,7 +294,7 @@ SEE References
 
 - [Top 10 Advanced CSS Responsive Design Concepts](https://www.youtube.com/watch?v=TUD1AWZVgQ8)
 
-#### pending from WebDevSimplified:
+### pending from WebDevSimplified:
 
 - [Responsive CSS Will Never Be The Same](https://www.youtube.com/watch?v=rrLAg7xNERA)
 - [Learn Every CSS Selector in 20 Minutes](https://www.youtube.com/watch?v=l1mER1bV0N0)
