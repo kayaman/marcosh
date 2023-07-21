@@ -34,18 +34,17 @@
   }
 
   h1 {
-    font-size: var(--size-fluid-2);
+    font-size: var(--size-5);
     text-transform: capitalize;
     max-inline-size: inherit;
-
   }
 
   .date {
     color: var(--text-3);
-    font-size: var(--size-2);
+    font-size: var(--size-3);
   }
   .tag {
-    font-size: var(--size-2);
+    font-size: var(--size-3);
     display: inline-block;
     border-radius: 3px;
     padding: .1em .15em .1em;
@@ -60,5 +59,19 @@
     display: flex;
     gap: var(--size-1);
     margin-top: var(--size-1);
+  }
+
+  @media(width <= 480px) and (orientation: portrait) {
+    h1 {
+      font-size: var(--size-4);
+    }
+
+    .date {
+      font-size: var(--size-3);
+    }
+
+    .tag {
+      font-size: var(--size-fluid-2);      
+    }
   }
 </style>

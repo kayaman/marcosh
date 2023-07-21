@@ -208,16 +208,16 @@ li {
 }
 
 .prose :is(h2, h3, h4, h5, h6) {
-  margin-top: var(--size-8);
-  margin-bottom: var(--size-3);
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-2);
 }
 
 .prose p:not(:is(h2, h3, h4, h5, h6) + p) {
-  margin-top: var(--size-7);
+  margin-top: var(--size-3);
 }
 
 .prose :is(ul, ol) {
-  list-style-type: '📌';
+  list-style-type: '👉🏼';
   padding-left: var(--size-5);
 }
 
@@ -233,4 +233,18 @@ li {
   border-radius: var(--radius-2);
   tab-size: 2;
   white-space: pre-wrap;
+}
+
+
+@media(width <= 480px) and (orientation: portrait) {
+  .prose pre {
+    font-size: var(--size-fluid-1);
+  }
+
+  .prose :is(ul, ol) li {
+    padding-inline-start: var(--size-1);
+    font-size: var(--size-3);
+  }
+
+  
 }
