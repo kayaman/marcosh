@@ -44,18 +44,19 @@
     gap: var(--size-1);
   }
 
+  
   .title {
     font-size: var(--size-7);
     font-weight: 700;
     color: var(--text-1);
   }
-
+  
   .tagline {
     color: var(--text-2);
     font-size: var(--size-3);
     font-weight: 400;
   }
-
+  
   .links {
     color: var(--text-1);
     display: flex;
@@ -65,12 +66,12 @@
     margin-block: var(--size-1);
     right: var(--size-7);
   }
-
+  
   a {
     color: inherit;
     text-decoration: none;
   }
-
+  
   
   h4 {
     position: relative;
@@ -82,8 +83,13 @@
   
   @media(width <= 480px) and (orientation: portrait) {
     nav {
-      padding-block-start: var(--size-fluid-1);
+      padding-block-start: var(--size-2);
     }
+
+    nav div {
+      padding-block-start: var(--size-1);
+    }
+    
     .tagline {
       display: none;
       visibility: hidden;

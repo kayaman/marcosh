@@ -62,6 +62,7 @@
     footer {
       align-items: center;
       justify-content: center;
+      padding-block-end: var(--size-3);
     }
     footer p:not(:last-child) {
       display: none;
