@@ -71,18 +71,15 @@
     text-decoration: none;
   }
 
-  ul {
-    padding-block-end: var(--size-2);
-  }
-
+  
   h4 {
     position: relative;
   }
-
+  
   li {
     vertical-align: top;
   }
-
+  
   @media(width <= 480px) and (orientation: portrait) {
     nav {
       padding-block-start: var(--size-fluid-1);
@@ -90,6 +87,10 @@
     .tagline {
       display: none;
       visibility: hidden;
+    }
+    
+    ul {
+      padding-block-start: var(--size-fluid-1);
     }
 
     ul li {
