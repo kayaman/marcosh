@@ -13,16 +13,17 @@ export async function GET({ fetch }) {
 		<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
 			<channel>
 				<title>${config.title}</title>
-				<description>${config.description}</description>
 				<link>${config.url}</link>
-				<atom:link href="${config.url}/rss.xml" rel="self" type="application/rss+xml"/>
+				<description>${config.description}</description>
+				<language>en-us</language>
 				${posts
           .map(
             (post) => `
 						<item>
 							<title>${post.title}</title>
-							<description>${post.description}</description>
 							<link>${config.url}/${post.slug}</link>
+							<description>${post.description}</description>
+							<author>${config.author}</author>
 							<guid isPermaLink="true">${config.url}/${post.slug}</guid>
 							<pubDate>${new Date(post.date).toUTCString()}</pubDate>
 						</item>
