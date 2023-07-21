@@ -85,11 +85,15 @@
 
   @media(width <= 480px) and (orientation: portrait) {
     nav {
-      padding-block-end: var(--size-1);
+      padding-block-start: var(--size-fluid-1);
     }
     .tagline {
       display: none;
       visibility: hidden;
+    }
+
+    ul li {
+      padding-inline-start: var(--size-fluid-1);
     }
 
     .title {

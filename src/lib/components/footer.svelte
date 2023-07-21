@@ -69,7 +69,7 @@
     }
     
     a {
-      padding-inline-start: var(--size-2);
+      padding-inline-start: var(--size-fluid-2);
     }
 
   }
