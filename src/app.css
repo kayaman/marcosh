@@ -241,8 +241,13 @@ li {
     font-size: var(--size-fluid-1);
   }
 
+  h1 {
+    font-weight: bolder;
+  }
+
   h2 {
     font-size: var(--size-fluid-3);
+    font-weight: normal;
   }
 
   .prose :is(ul, ol) li {
