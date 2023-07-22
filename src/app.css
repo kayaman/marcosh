@@ -247,12 +247,12 @@ li {
 
   h2 {
     font-size: var(--size-fluid-3);
-    font-weight: normal;
+    font-weight: bolder;
   }
 
   h3 {
     font-size: var(--size-fluid-2);
-    font-weight: normal;
+    font-weight: bolder;
   }
 
   .prose :is(ul, ol) li {
