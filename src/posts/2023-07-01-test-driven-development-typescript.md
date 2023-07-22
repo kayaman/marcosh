@@ -10,15 +10,17 @@ categories:
 published: true
 ---
 
-## 1. Introduction
+## Introduction
 
 > If one's first ask yourself what the structure of convincing proof would be and, having found this, then constructs a program satisfying this proof's requirements.. ~~ The Humble Programmer, Edsger W. Dijkstra (1972)
 
+
 > It is necessary to have a hand calculated check case with which to compare the answers which will later be calculated by the machine. ~~ Digital Computer Programming, D.D McCracken (1957)
+
 
 > The first step is to write a test that fails. ~~ Test Driven Development by Example, Kent Beck (2002)
 
-## 2. Why TDD?
+## Why TDD?
 
 1. Fast feedback
 
@@ -42,7 +44,67 @@ published: true
 - Examples
 - Specifications
 
-## 3. TDD
+## Setup
+
+```sh
+npm i -g jest
+
+mkdir tdd-ts && $_
+npm i -D jest typescript ts-jest @types/jest
+npx ts-jest config:init
+# test installation:
+jest
+```
+## TypeScript setup
+
+```sh
+npx tsc --init
+```
+
+Basic setup:
+
+```json
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "strict": true
+  }
+}
+```
+
+## Usage
+
+```sh
+jest --watchAll
+```
+
+## The Anatomy of a Test
+
+### Naming
+
+```ts
+import { greeter } from './greeter';
+
+describe('greeter', () => { // same as production code file name
+  test('helloWorld given default should return `Hello world!`', () => { // given then when
+    const sut = greeter(); // subject under test
+    const expected = 'Hello world!'; // expected outcome
+
+    const actual = sut.helloWorld(); // actual outcome
+
+    expect(actual).toBe(expected) // assertion: expect actual outcome 
+                                  // to be equal to expected outcome
+  })
+})
+```
+
+### Structure
+
+![Four-Phase Test](/ts-tdd/four_phase_method.png)
+
+## Notes
+
+- `sut` stands for **System Under Test**.
 
 ## References
 
