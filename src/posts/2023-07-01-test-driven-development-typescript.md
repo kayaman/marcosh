@@ -102,10 +102,18 @@ describe('greeter', () => { // same as production code file name
 
 ![Four-Phase Test](/ts-tdd/four_phase_method.png)
 
+1. Setup
+2. Exercise
+3. Verify
+4. Tear down
+
+There is no repetition in the phases.
+
 ## Notes
 
 - `sut` stands for **System Under Test**.
 
 ## References
 
+- [TDD Fundamentals with TypeScript](/ts-tdd/TDD_FundamentalsInTypeScript.pdf)
 - [Test-Driven Development : The Practical Guide with Typescript](https://1kevinson.com/test-driven-development-for-the-rest-of-us/)
