@@ -250,6 +250,11 @@ li {
     font-weight: normal;
   }
 
+  h3 {
+    font-size: var(--size-fluid-2);
+    font-weight: normal;
+  }
+
   .prose :is(ul, ol) li {
     padding-inline-start: var(--size-1);
     font-size: var(--size-3);

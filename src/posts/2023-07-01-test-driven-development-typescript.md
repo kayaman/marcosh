@@ -12,13 +12,16 @@ published: true
 
 ## Introduction
 
-> If one's first ask yourself what the structure of convincing proof would be and, having found this, then constructs a program satisfying this proof's requirements.. ~~ The Humble Programmer, Edsger W. Dijkstra (1972)
+"If one's first ask yourself what the structure of convincing proof would be and, having found this, then constructs a program satisfying this proof's requirements.."  
+~~The Humble Programmer, Edsger W. Dijkstra (1972)
 
-  
-> It is necessary to have a hand calculated check case with which to compare the answers which will later be calculated by the machine. ~~ Digital Computer Programming, D.D McCracken (1957)
+   
+"It is necessary to have a hand calculated check case with which to compare the answers which will later be calculated by the machine."  
+~~Digital Computer Programming, D.D McCracken (1957)
 
 
-> The first step is to write a test that fails. ~~ Test Driven Development by Example, Kent Beck (2002)
+"The first step is to write a test that fails."  
+~~ Test Driven Development by Example, Kent Beck (2002)
 
 ## Why TDD?
 
@@ -61,7 +64,7 @@ jest
 npx tsc --init
 ```
 
-Basic setup:
+Basic configuration:
 
 ```json
 {
