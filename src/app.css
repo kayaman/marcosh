@@ -241,6 +241,10 @@ li {
     font-size: var(--size-fluid-1);
   }
 
+  h2 {
+    font-size: var(--size-fluid-3);
+  }
+
   .prose :is(ul, ol) li {
     padding-inline-start: var(--size-1);
     font-size: var(--size-3);
