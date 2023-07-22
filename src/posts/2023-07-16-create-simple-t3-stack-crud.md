@@ -385,7 +385,9 @@ pbcopy < openssl rand -base64 32
 openssl rand -base64 32 | clip
 ```
 
-Add it to the `.env` file at the project root. Example:
+Add it to the `.env` file at the project root. 
+
+Example:
 
 ```
 NEXTAUTH_SECRET="g6rESogW4LAHYICqdbbjol3VUwJm/mLwUXopGVEM5RY="
@@ -395,12 +397,13 @@ NEXTAUTH_SECRET="g6rESogW4LAHYICqdbbjol3VUwJm/mLwUXopGVEM5RY="
 
 ### References
 
-- xdg-open
-- open
-- start
-- psql
-- openssl
-- xclip
-- pbcopy
-- clip
-- docker stop and rm all
+- [xdg-open](https://linux.die.net/man/1/xdg-open#:~:text=xdg%2Dopen%20opens%20a%20file,ftp%2C%20http%20and%20https%20URLs.)
+- [open](https://jun711.github.io/productivity/how-to-open-websites-on-a-web-browser-using-a-command-on-mac/)
+- [start](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/start)
+- [psql](https://www.postgresql.org/docs/current/app-psql.html)
+- [openssl](https://wiki.openssl.org/index.php/Command_Line_Utilities)
+- [xclip](https://linux.die.net/man/1/xclip)
+- [pbcopy](https://ss64.com/osx/pbcopy.html)
+- [clip](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/clip)
+- [docker stop](https://github.com/kayaman/dotfiles/blob/master/functions.sh#L9)
+- [docker rm all](https://github.com/kayaman/dotfiles/blob/master/functions.sh#L14)
