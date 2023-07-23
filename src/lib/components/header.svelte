@@ -1,7 +1,8 @@
 <script lang="ts">
   import * as config from '$lib/config'
   import Toggle from '$lib/components/toggle.svelte'
-  import { PersonStanding, Rss, Mail } from 'lucide-svelte'
+  import Tagline from '$lib/components/tagline.svelte'
+  import { PersonStanding, Rss, Mail, Home } from 'lucide-svelte'
 </script>
 
 <nav>
@@ -10,13 +11,16 @@
       <b class="title">{config.title}</b>
     </a>
     <h4>
-      <b class="tagline">{config.tagline}</b>
+      <b class="tagline desktop-only"><Tagline /></b>
     </h4>
   </div>
   <ul class="links">
     <li>
+      <a href="/"><Home size="24" style="display: inline"/></a>
+    </li>
+    <li>
       <a href="/about"><PersonStanding size="25" style="display: inline"/></a>
-    </li>    
+    </li>
     <li>
       <a href="mailto:m@rco.sh"><Mail style="display: inline"/></a>
     </li>
@@ -62,7 +66,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap: var(--size-2);
+    gap: var(--size-fluid-0);
     margin-block: var(--size-1);
     right: var(--size-7);
   }
