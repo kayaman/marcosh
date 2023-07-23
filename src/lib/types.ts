@@ -20,6 +20,8 @@ export type Category =
   | 'markdown'
   | 'course'
   | 'tdd'
+  | 'psychology'
+  | 'relationships'
 
 export type Post = {
   title: string

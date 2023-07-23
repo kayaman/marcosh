@@ -78,23 +78,27 @@ Basic configuration:
 ## Usage
 
 ```sh
-jest --watchAll
+jest --watchAll --verbose --coverage
 ```
 
 ## The Anatomy of a Test
 
-### Naming
+### Naming and Arranging
 
 ```ts
 import { greeter } from './greeter';
 
-describe('greeter', () => { // same as production code file name
-  test('helloWorld given default should return `Hello world!`', () => { // given then when
-    const sut = greeter(); // subject under test
+describe('greeter', () => { // same as production code file name 
+  test('helloWorld given default should return `Hello world!`', () => {
+    // Arrange (harnessing)
+      // State, services or SUT (in this order)
     const expected = 'Hello world!'; // expected outcome
+    const sut = greeter(); // subject under test
 
+    // Act (preferrably one line)
     const actual = sut.helloWorld(); // actual outcome
 
+    // Assert (one assertion per test)
     expect(actual).toBe(expected) // assertion: expect actual outcome 
                                   // to be equal to expected outcome
   })
