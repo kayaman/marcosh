@@ -16,7 +16,7 @@
   </div>
   <ul class="links">
     <li>
-      <a href="/"><Home size="24" style="display: inline"/></a>
+      <a href="/"><Home size="22" style="display: inline"/></a>
     </li>
     <li>
       <a href="/about"><PersonStanding size="25" style="display: inline"/></a>
