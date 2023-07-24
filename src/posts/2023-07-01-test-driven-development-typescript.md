@@ -93,7 +93,7 @@ describe('greeter', () => { // same as production code file name
     // Arrange (harnessing)
       // State, services or SUT (in this order)
     const expected = 'Hello world!'; // expected outcome
-    const sut = greeter(); // subject under test
+    const sut = greeter(); // subject under test 
 
     // Act (preferrably one line)
     const actual = sut.helloWorld(); // actual outcome
@@ -104,6 +104,9 @@ describe('greeter', () => { // same as production code file name
   })
 })
 ```
+
+- To skip a test, prefix it with a `x` (e.g. `xtest('should skip this test', () => {})`). Also `xdescribe`, `xit`, or `xtest`.
+- To run only one test, use `test.only` (e.g. `test.only('should run only this test', () => {})`).
 
 ### Structure
 
@@ -118,7 +121,6 @@ There is no repetition in the phases.
 
 ## Notes
 
-- `sut` stands for **System Under Test**.
 
 ## References
 
