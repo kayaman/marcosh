@@ -17,8 +17,8 @@
   </hggroup>
 
   <div class="tags">
-    {#each data.meta.categories as tag}
-      <span class="tag">&num;{tag}</span>
+    {#each data.meta.categories as category}
+      <a href="/category/{category}" class="tag">&num;{category}</a>
     {/each}
   </div>
 

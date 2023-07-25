@@ -1,12 +1,9 @@
 import type { Post } from '$lib/types'
-import { json } from '@sveltejs/kit'
 
-export async function GET() {
-  const posts = await getPosts()
-  return json(posts)
-}
+export const load = async ({ params }) => {
 
-const getPosts = async () => {
+  console.log(params)
+
   let posts: Post[] = []
 
   const paths = import.meta.glob('/src/posts/*.md', { eager: true })
@@ -18,7 +15,7 @@ const getPosts = async () => {
     if (file && typeof file === 'object' && 'metadata' in file && slug) {
       const metadata = file.metadata as Omit<Post, 'slug'>
       const post = { ...metadata, slug } satisfies Post
-      post.published && posts.push(post)
+      post.categories.includes(params.category) && post.published && posts.push(post)
     }
   }
 
@@ -26,6 +23,5 @@ const getPosts = async () => {
     (first, second) => new Date(second.date).getTime() - new Date(first.date).getTime(),
   )
 
-  return posts
+  return { posts }
 }
-

@@ -2,9 +2,7 @@
 title: Test Your Emotional Comfort in Relationships 
 description: A quiz shows how and why we should test emotional comfort. 
 date: '2023-07-23'
-categories:
-  - psychology
-  - relationships
+categories: ["psychology", "relationships"]
 published: true
 ---
 
