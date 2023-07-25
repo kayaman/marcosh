@@ -31,9 +31,7 @@ const config = {
 
   kit: {
     adapter: adapter(),
-    prerender: {
-      onError: () => { 'continue'; }
-    } 
+    prerender: 'continue',
   },
 
 }
