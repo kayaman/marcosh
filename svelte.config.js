@@ -31,8 +31,10 @@ const config = {
 
   kit: {
     adapter: adapter(),
-    prerender: 'continue',
-  },
+    prerender: {
+      handleHttpError: 'warn', 
+    },
+  }
 
 }
 

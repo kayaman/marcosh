@@ -7,7 +7,7 @@ categories:
   - learning
   - course
   - study-notes
-published: true
+published: false
 ---
 
 1. Paragraphs
