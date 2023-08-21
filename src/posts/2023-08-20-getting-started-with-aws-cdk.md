@@ -8,7 +8,7 @@ published: true
 
 ## Before you begin
 
-a lot of fuss is being made about [SST](https://sst.dev) and [AWS CDK](https://aws.amazon.com/cdk/). I have been using CDK for a while now and I am very happy with it. I have not tried SST yet but I am sure it is great too. I am not going to compare the two here. I am just going to show you how to get started with CDK.
+A lot of fuss is being made about [SST](https://sst.dev) and [AWS CDK](https://aws.amazon.com/cdk/). I have been using CDK for a while now and I am very happy with it. I have not tried SST yet but I am sure it is great too. I am not going to compare the two here. I am just going to show you how to get started with CDK.
 
 ## About
 
@@ -174,7 +174,7 @@ cdk deploy
 
 The cdk deploy command compiles your TypeScript into JavaScript and creates a CloudFormation change set to deploy this change. 
 
-CDK manages all of this for you, along with uploading the template file to S3 and using CloudFormation to run it. After a few minutes, you should get a green check mark along with an ARN [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of your newly created CloudFormation stack. Your new VPC has now been deployed and is ready to be used.
+CDK manages all of this for you, along with uploading the template file to S3 and using CloudFormation to run it. After a few minutes, you should get a green check mark along with an ARN ([Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html)) of your newly created CloudFormation stack. Your new VPC has now been deployed and is ready to be used.
 
 ## Clean up resources (optional but recommended)
 
