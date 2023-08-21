@@ -57,6 +57,8 @@ npx ts-jest config:init
 jest
 ```
 
+
+```sh
 ## TypeScript setup
 
 ```sh
@@ -73,6 +75,8 @@ Basic configuration:
   }
 }
 ```
+
+Update: using [Vitest](https://vitest.dev/) instead of Jest: [repo](https://github.com/kayaman/ts-vitest)
 
 ## Usage
 
@@ -175,13 +179,60 @@ Boundary: where two equivalence partitions meet.
 
 Fake it, Fake it, Make it (triangulate).
 
+### Naming tests
+
+The stages of naming:
+
+Nonsense --> Accurate --> Precise --> Meaningful
+
+Meaningful: intention revealing, domain concepts
+
+### Green Bar Patterns and TDD Gears
+
+- One-to-Many Green Bar Pattern
+- The Obvious Green Bar Patter
+- The Backout Green Bar Pattern
+- The Learning Test Green Bar Pattern
+- The TDD Gears Model
+
+### Test Doubles
+
+A piece of code that replaces some "real" code for purpose of testing. So that tests can be Fast, Isolated and Repeatable.
+
+Two main styles of test doubles:
+
+- London: heavy use of test of test doubles
+- Chicago: minimize use of test doubles
+
+Fakes, Stubs and Mocks:
+
+**Fake**: an object with a simplified working implementation
+
+- Only for indirect input
+- Not used for control
+- Not used for assertions
+
+**Stub**: An object that provides predefined data
+
+- Can be used for indirect input
+- Can be used for control
+- Not used for assertions
+
+**Mock**: An object that records calls received, and verifies them against expected calls
+
+- Can be used for indirect input
+- Can be used for control
+- Used for assertions
+
 ## Notes
 
 ## Show me the code
 
 - [TypeScript TDD Template](https://github.com/kayaman/ts-tdd)
 - [Rock, Paper, Scissors Kata](https://github.com/kayaman/rps-tdd)
-
+- [FizzBuzz Kata](https://github.com/kayaman/fizzbuzz-tdd)
+- [Age Calculator Kata](https://github.com/kayaman/age-calculator-tdd)
+- [String Calculator Kata](https://github.com/kayaman/string-calculator-tdd)
 ## References
 
 - [TDD Fundamentals with TypeScript](/ts-tdd/TDD_FundamentalsInTypeScript.pdf)
