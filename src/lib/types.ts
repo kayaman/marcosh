@@ -1,4 +1,6 @@
 export type Category =
+  | 'aws'
+  | 'cdk'
   | 'svelte'
   | 'sveltekit'
   | 'javascript'
