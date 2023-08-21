@@ -1,8 +1,8 @@
 ---
 title: AWS Cloud Development Kit
 description: Getting started with AWS CDK
-date: '2023-08-21'
-categories: ["aws", "cdk]
+date: '2023-08-20'
+categories: ["aws", "cdk"]
 published: true
 ---
 
