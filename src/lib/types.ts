@@ -24,6 +24,10 @@ export type Category =
   | 'tdd'
   | 'psychology'
   | 'relationships'
+  | 'sdlc'
+  | 'containers'
+  | 'docker'
+  | 'kubernetes'
 
 export type Post = {
   title: string
