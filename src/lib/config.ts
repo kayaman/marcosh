@@ -7,6 +7,7 @@ export const tagline = 'The years go fast but the days go so slow..'
 export const taglines = [
   'The years go fast but the days go so slow..',
   'Oh, my life is changing everyday, in every possible way..',
+  'The future\'s uncertain and the end is always near',
 ]
 export const bottomline = 'Crafted with ❤️ by @kayaman'
 export const role = 'Senior Solutions Architect'
