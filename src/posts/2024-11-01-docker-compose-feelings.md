@@ -1,5 +1,5 @@
 ---
-title: Container Orchestration: Docker Compose vs Kubernetes
+title: 'Container Orchestration: Docker Compose vs Kubernetes'
 description: This is part of my Kubernetes study nodes.
 date: '2024-11-01'
 categories:
